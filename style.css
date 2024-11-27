@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #131313;
+}
+canvas {
+    border: 4px solid white;
+}
+
+/* Efecto de fondo rojo al perder un punto */
+.overlay-derrota {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Por encima del canvas */
+    text-align: center;
+}
+
+.cara-triste {
+    font-size: 80px;
+    color: white;
+    animation: parpadeo 1s infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
