@@ -52,7 +52,8 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(anchoCanvas, altoCanvas);
+    let canvas = createCanvas(anchoCanvas, altoCanvas);
+    canvas.parent("game-container");
     reiniciarJuego();
 
     // Detectar eventos de teclado

@@ -1,14 +1,37 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
     background-color: #131313;
 }
+
 canvas {
     border: 4px solid white;
+    display: block;
 }
+
+.author {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+h1 {
+    color: white; /* Color del texto */
+    font-size: 3rem; /* Tamaño de la fuente */
+    font-family: 'Arial', sans-serif; /* Fuente para el título */
+    margin: 0 0 20px 0; /* Separación del canvas */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* Sombra para resaltar */
+}
+
 
 /* Efecto de fondo rojo al perder un punto */
 .overlay-derrota {
